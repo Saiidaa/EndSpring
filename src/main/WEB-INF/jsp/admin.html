@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Admin page</title>
+</head>
+<body>
+<div>
+    <form action="admin.jsp" method="post">
+    <table>
+        <thead>
+        <th> ID </th>
+        <th> UserName </th>
+        <th> Password </th>
+        <th>Roles</th>
+        </thead>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td>
+                </td>
+                <td>
+                    <input type="hidden" name="userId" value="${user.id}"/>
+                    <input type="hidden" name="action" value="delete"/>
+                    <button type="submit">Delete</button>
+
+                </td>
+            </tr>
+    </table>
+    </form>
+    <a href="index.html">Home</a>
+</div>
+</body>
+</html>
